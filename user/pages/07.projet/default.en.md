@@ -82,3 +82,11 @@ Embedded or adapted components. npm’s transitive dependencies are listed in [T
 </div>
 
 Python: [PSF License](https://docs.python.org/3/license.html). LemMinX: Eclipse Public License. LanguageTool (optional): LGPL. Workshops: [Workshop CRCAO](https://github.com/lejeanbaptiste/workshop_CRCAO).
+
+<h2 id="citer">How to cite</h2>
+
+Please cite Grognard using the following Zenodo DOI:
+
+> Morgan, Daniel Patrick. *Grognard* (v0.1.1-beta.2). Zenodo, 2026. [https://doi.org/10.5281/zenodo.22801228](https://doi.org/10.5281/zenodo.22801228)
+
+The [Zenodo record](https://zenodo.org/records/22801228) provides up-to-date citation metadata for each version.

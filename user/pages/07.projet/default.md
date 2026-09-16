@@ -82,3 +82,11 @@ Composants embarqués ou adaptés. Les dépendances transitives d’npm sont dan
 </div>
 
 Python : [PSF License](https://docs.python.org/3/license.html). LemMinX : Eclipse Public License. LanguageTool (optionnel) : LGPL. Ateliers : [Workshop CRCAO](https://github.com/lejeanbaptiste/workshop_CRCAO).
+
+<h2 id="citer">Comment citer</h2>
+
+Merci de citer Grognard en utilisant le DOI Zenodo suivant :
+
+> Morgan, Daniel Patrick. *Grognard* (v0.1.1-beta.2). Zenodo, 2026. [https://doi.org/10.5281/zenodo.22801228](https://doi.org/10.5281/zenodo.22801228)
+
+Le [dépôt Zenodo](https://zenodo.org/records/22801228) fournit les métadonnées de citation à jour pour chaque version.
