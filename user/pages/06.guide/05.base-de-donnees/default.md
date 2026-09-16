@@ -97,6 +97,12 @@ Une **clé orpheline** est un identifiant présent sur une balise mais absent de
 
 Ne faites pas écrire simultanément deux ordinateurs dans le même dossier d’entités synchronisé par Dropbox ou un service équivalent. Pour un projet partagé sur clé USB ou avec Git, décidez dès le départ si chacun utilise une base locale au projet ou si tous les utilisateurs ont accès à la même base centrale.
 
+Une troisième option existe pour les projets qui ont besoin d’une édition réellement simultanée plutôt que d’une alternance : une base de données hébergée sur **Turso**. Contrairement aux bases locale et centrale décrites ci-dessus, une base Turso vit sur un serveur distant plutôt que sous forme de fichier sur une machine : plusieurs collaborateurs peuvent modifier la même base de projet en même temps, depuis des ordinateurs différents, sans fusion manuelle et sans le risque de corruption d’un dossier synchronisé.
+
+Turso se configure par projet. Dans **Paramètres → Projet → Base de données partagée du projet**, choisissez **Turso**, indiquez l’URL de la base (non secrète — elle peut voyager avec le fichier du projet lui-même, par exemple dans un `grognard.project.json` partagé via Git), puis collez votre propre jeton d’accès personnel. Ne partagez jamais votre jeton ni vos identifiants de compte avec un collaborateur ; chacun crée et colle le sien. **Tester la connexion** permet de le vérifier avant d’enregistrer. Le changement ne prend effet qu’à la prochaine ouverture du projet, et une base locale existante n’est pas copiée automatiquement : utilisez **Migrer les données locales vers Turso** une fois, avant qu’un collaborateur ne commence à s’appuyer sur la base partagée, sinon chacun se retrouvera devant une base vide.
+
+Un projet géré par Turso n’a pas de mode hors ligne : son ouverture nécessite une connexion active. Sa sauvegarde cloud est un export logique plutôt qu’une copie de fichier, et sa restauration est un processus manuel et guidé plutôt qu’un remplacement automatique.
+
 <a id="sauvegarder"></a>
 ## 7. Sauvegarder la base
 

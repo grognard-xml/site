@@ -97,6 +97,12 @@ An **orphaned key** is an identifier present on a tag but absent from the corres
 
 Do not have two computers write simultaneously to the same entity folder synchronized by Dropbox or a similar service. For a project shared via USB drive or Git, decide from the outset whether each person will use a project-local database or everyone will access the same central database.
 
+A third option exists for projects that need real, simultaneous editing rather than turn-taking: a **Turso**-backed database. Unlike the local and central databases described above, a Turso database lives on a hosted server rather than as a file on anyone's machine — collaborators can edit the same project database at the same time, from different computers, with no manual merging and none of the corruption risk of a synced folder.
+
+Turso is configured per project. Under **Settings → Project → Shared project database**, choose **Turso**, provide the database's URL (not secret — it can travel with the project file itself, for instance in a git-shared `grognard.project.json`), and paste your own scoped access token. Never share your own token or account login with a collaborator; each person creates and pastes in their own. **Test connection** confirms it before you save. The switch takes effect the next time the project is opened, and an existing local database is not copied over automatically — use **Migrate local data to Turso** once, before a collaborator starts relying on the shared database, or everyone will be looking at an empty one.
+
+A Turso-backed project has no offline mode: opening it needs a live connection. Its cloud backup is a logical export rather than a file copy, and restoring one is a manual, guided replay rather than an automatic swap.
+
 <a id="sauvegarder"></a>
 ## 7. Back up the database
 
